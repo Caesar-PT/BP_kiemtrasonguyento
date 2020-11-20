@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPrime(number) {
+        let snt = true;
+        for ( let i = 2; i < number; i++) {
+
+            if ( number%i === 0 ) {
+                snt = false;
+                document.write('Khong phai so nguyen to');
+                break;
+            }
+        } if (snt === true){
+            document.write('La so nguyen to');
+        }
+    }
+    isPrime(parseInt(prompt('Nhap so can xac dinh')))
+</script>
+
+</body>
+</html>
